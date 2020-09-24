@@ -1,4 +1,6 @@
-# gitSearcher
+# Git Searcher
+
+Used Git open Source Api to fetch users data, and implemented pagination for saving user's data and reduce lag while loading tons of data.
 
 Screenshots:
 
