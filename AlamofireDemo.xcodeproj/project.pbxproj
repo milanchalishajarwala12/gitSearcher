@@ -14,6 +14,12 @@
 		554683942502D7CF00394378 /* AlamofireDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 554683922502D7CF00394378 /* AlamofireDemo.xcdatamodeld */; };
 		554683962502D7D100394378 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554683952502D7D100394378 /* Assets.xcassets */; };
 		554683992502D7D100394378 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554683972502D7D100394378 /* LaunchScreen.storyboard */; };
+		554683A12506D5BD00394378 /* APIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554683A02506D5BD00394378 /* APIHandler.swift */; };
+		554683A32506D8CB00394378 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554683A22506D8CA00394378 /* Response.swift */; };
+		55ACDE79251C294A00B54DB8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ACDE78251C294A00B54DB8 /* ViewModel.swift */; };
+		55ACDE7E251C2F4900B54DB8 /* GitUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ACDE7C251C2F4900B54DB8 /* GitUsersTableViewCell.swift */; };
+		55ACDE7F251C2F4900B54DB8 /* GitUsersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55ACDE7D251C2F4900B54DB8 /* GitUsersTableViewCell.xib */; };
+		55ACDE89251D14E000B54DB8 /* GitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ACDE88251D14E000B54DB8 /* GitDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,12 @@
 		554683952502D7D100394378 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554683982502D7D100394378 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5546839A2502D7D100394378 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554683A02506D5BD00394378 /* APIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHandler.swift; sourceTree = "<group>"; };
+		554683A22506D8CA00394378 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		55ACDE78251C294A00B54DB8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		55ACDE7C251C2F4900B54DB8 /* GitUsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUsersTableViewCell.swift; sourceTree = "<group>"; };
+		55ACDE7D251C2F4900B54DB8 /* GitUsersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GitUsersTableViewCell.xib; sourceTree = "<group>"; };
+		55ACDE88251D14E000B54DB8 /* GitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,12 @@
 				554683892502D7CF00394378 /* AppDelegate.swift */,
 				5546838B2502D7CF00394378 /* SceneDelegate.swift */,
 				5546838D2502D7CF00394378 /* ViewController.swift */,
+				554683A22506D8CA00394378 /* Response.swift */,
+				554683A02506D5BD00394378 /* APIHandler.swift */,
+				55ACDE88251D14E000B54DB8 /* GitDetailViewController.swift */,
+				55ACDE7C251C2F4900B54DB8 /* GitUsersTableViewCell.swift */,
+				55ACDE7D251C2F4900B54DB8 /* GitUsersTableViewCell.xib */,
+				55ACDE78251C294A00B54DB8 /* ViewModel.swift */,
 				5546838F2502D7CF00394378 /* Main.storyboard */,
 				554683952502D7D100394378 /* Assets.xcassets */,
 				554683972502D7D100394378 /* LaunchScreen.storyboard */,
@@ -128,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55ACDE7F251C2F4900B54DB8 /* GitUsersTableViewCell.xib in Resources */,
 				554683992502D7D100394378 /* LaunchScreen.storyboard in Resources */,
 				554683962502D7D100394378 /* Assets.xcassets in Resources */,
 				554683912502D7CF00394378 /* Main.storyboard in Resources */,
@@ -143,8 +162,13 @@
 			files = (
 				5546838E2502D7CF00394378 /* ViewController.swift in Sources */,
 				5546838A2502D7CF00394378 /* AppDelegate.swift in Sources */,
+				554683A12506D5BD00394378 /* APIHandler.swift in Sources */,
 				5546838C2502D7CF00394378 /* SceneDelegate.swift in Sources */,
+				55ACDE89251D14E000B54DB8 /* GitDetailViewController.swift in Sources */,
+				55ACDE7E251C2F4900B54DB8 /* GitUsersTableViewCell.swift in Sources */,
+				554683A32506D8CB00394378 /* Response.swift in Sources */,
 				554683942502D7CF00394378 /* AlamofireDemo.xcdatamodeld in Sources */,
+				55ACDE79251C294A00B54DB8 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +313,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Milan.AlamofireDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Milan.Gitsearcher.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -306,12 +331,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = AlamofireDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Milan.AlamofireDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = Milan.Gitsearcher.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
